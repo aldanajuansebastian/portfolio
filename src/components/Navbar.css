@@ -1,0 +1,20 @@
+.navbar {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar> .itemNav> a {
+    font-family: Tahoma;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    margin: 2px 30px;
+    font-size: 18px;
+}
+

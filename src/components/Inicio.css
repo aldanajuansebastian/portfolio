@@ -1,0 +1,36 @@
+.inicio {
+    width: 100%;
+    height: auto;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inicio> h1 {
+    color:rgb(255, 115, 0);
+}
+
+.inicio> p {
+    color:rgb(212, 212, 212);
+    font-size: 16px;
+    font-weight: lighter;
+}
+.videobg {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+.imghome {
+    width: 200px;
+}
+
