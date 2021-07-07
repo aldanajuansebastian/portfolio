@@ -1,9 +1,7 @@
 .skills {
-    padding: 0;
     width: 100%;
-    height: auto;
     background-color: #EA7807;
-    margin: 0;
+    margin-top: -10px;
 }
 
 
@@ -16,6 +14,22 @@
     
 }
 
+.skillslist {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.skill {
+    width: 150px;
+    margin: 0 50px;
+    color: rgb(39, 39, 39);
+    font-size: 18px;
+}
+
 .con {
     text-align: center;
 }
@@ -23,4 +37,17 @@
 .skills > .con > h1 {
     font-size: 50px;
     color:white;
+}
+
+@media (max-width: 500px){
+    .skillslist {
+        flex-direction: column;
+    }
+    .skill {
+        margin: 10px 0;
+    }
+    .skills > .con > h1 {
+        font-size: 40px;
+        padding-top: 20px;
+    }
 }

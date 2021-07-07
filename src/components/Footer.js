@@ -11,7 +11,8 @@ function Footer () {
     return (
         <div className="footer" id="footer">
                 <div className="con">
-                    <motion.h4 whileHover= {{scale:0.9}}>Sebastian Aldana</motion.h4>
+                    <motion.h3 whileHover= {{scale:0.9}}>Sebastian Aldana</motion.h3>
+                    <p>aldanajuansebastian1@gmail.com</p>
                     <div className="socialmediasection">
                         <div className="socialmedialogo"><a href="https://www.facebook.com/Juan.Sebastian.Aldana.M/" target="blank"><img src={Facebook} alt="facebook logo" width="100%"/></a></div>
                         <div className="socialmedialogo"><a href="https://www.linkedin.com/in/juan-sebasti%C3%A1n-aldana-91752719b/" target="blank"><img src={Linkedin} alt="facebook logo" width="100%"/></a></div>
