@@ -1,15 +1,24 @@
 import React from 'react';
 import './Footer.css';
 import {motion} from 'framer-motion';
-import blue from './img/footer.png';
+import Facebook from './img/facebook.png';
+import Linkedin from './img/linkedin.png';
+import Github from './img/github.png';
+import Whatsapp from './img/whatsapp.png';
 
 
 function Footer () {
     return (
         <div className="footer" id="footer">
-                <img className="blue" src={blue} width="100%"></img>
                 <div className="con">
-                    <motion.h1 whileHover= {{scale:0.9}}>Footer</motion.h1>
+                    <motion.h4 whileHover= {{scale:0.9}}>Sebastian Aldana</motion.h4>
+                    <div className="socialmediasection">
+                        <div className="socialmedialogo"><a href="https://www.facebook.com/Juan.Sebastian.Aldana.M/" target="blank"><img src={Facebook} alt="facebook logo" width="100%"/></a></div>
+                        <div className="socialmedialogo"><a href="https://www.linkedin.com/in/juan-sebasti%C3%A1n-aldana-91752719b/" target="blank"><img src={Linkedin} alt="facebook logo" width="100%"/></a></div>
+                        <div className="socialmedialogo"><a href="https://wa.me/+573208648408" target="blank"><img src={Whatsapp} alt="facebook logo" width="100%"/></a></div>
+                        <div className="socialmedialogo"><a href="https://github.com/aldanajuansebastian" target="blank"><img src={Github} alt="facebook logo" width="100%"/></a></div>
+                    
+                    </div>
                 </div>
         </div>
     )
