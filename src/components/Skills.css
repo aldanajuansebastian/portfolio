@@ -1,0 +1,24 @@
+.skills {
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+
+.orange {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.con {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.skills > .con > h1 {
+    font-size: 50px;
+    color:white;
+}

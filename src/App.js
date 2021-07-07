@@ -4,6 +4,7 @@ import Inicio from './components/Inicio';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Footer from './components/Footer';
 
 class App extends React.Component {
 
@@ -18,6 +19,7 @@ class App extends React.Component {
             <Inicio />
             <Projects />
             <Skills />
+            <Footer />
           </>
           )    
     }
