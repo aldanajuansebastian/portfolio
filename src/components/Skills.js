@@ -15,7 +15,7 @@ function Skills () {
             <div className="skills" id="skills">
                     
                     <div className="con">
-                        <motion.h1 whileHover= {{scale:0.9}}>Skills</motion.h1>
+                        <motion.h1 whileHover= {{scale:0.9}}>My Skills</motion.h1>
                         <div className="skillslist">
                             <div className="skill">
                                 <div className="imgskill"><img src={LogoReact} alt="React Logo" width="100%"></img></div>
