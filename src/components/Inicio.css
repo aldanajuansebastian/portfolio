@@ -10,11 +10,19 @@
     align-items: center;
 }
 
-.inicio> h1 {
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.inicio> .contenedor> h1 {
     color:rgb(255, 115, 0);
 }
 
-.inicio> p {
+.inicio> .contenedor> p {
     color:rgb(212, 212, 212);
     font-size: 16px;
     font-weight: lighter;
@@ -32,5 +40,38 @@
 
 .imghome {
     width: 200px;
+}
+
+@media screen and (max-width: 500px){
+    .contenedor {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px){
+    .contenedor {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 1800px) and (max-width: 2400px){
+    .inicio> .contenedor> p {
+        font-size: 26px;
+    }
+    .inicio> .contenedor> h1 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    .inicio> .contenedor> p {
+        font-size: 36px;
+    }
+    .inicio> .contenedor> h1 {
+        font-size: 46px;
+    }
+    .contenedor {
+        margin-top: 120px;
+    }
 }
 
