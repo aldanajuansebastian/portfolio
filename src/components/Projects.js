@@ -1,8 +1,10 @@
 import React from 'react';
 import './Projects.css';
 import {motion} from 'framer-motion';
-import Cinepelis from './img/cinepelis.png'
-import Venuspizza from './img/venuspizza.png'
+import CinePelis from './img/cinepelis.png';
+import Venuspizza from './img/venuspizza.png';
+import { Link } from "react-router-dom";
+
 
 
 function Projects () {
@@ -10,19 +12,18 @@ function Projects () {
         <div className="projects" id="projects">
            <motion.h1 whileHover= {{scale:0.9}}>Projects</motion.h1>
             <div className="projectslist">
-                <div className="project">
-                    <div className="imgproject"><img src={Cinepelis} alt="Cinepelis" width="100%"></img></div>
+                <Link to="/cinepelis" className="project">
+                    <div className="imgproject"><img src={CinePelis} alt="Cinepelis" width="100%"></img></div>
                     <h3>CinePelis</h3>
                     <p>Project developed with React</p>
-                </div>
+                </Link>
                 <div className="project">
                     <div className="imgproject"><img src={Venuspizza} alt="VenusPizza" width="100%"></img></div>
                     <h3>Venus Pizza</h3>
-                    <p>Project developed with React</p>
+                    <p>Project developed with React</p> 
                 </div>
                 
             </div>
-
         </div>
     )
 }
