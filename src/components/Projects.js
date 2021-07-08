@@ -12,16 +12,16 @@ function Projects () {
         <div className="projects" id="projects">
            <motion.h1 whileHover= {{scale:0.9}}>Projects</motion.h1>
             <div className="projectslist">
-                <Link to="/cinepelis" className="project">
+                <Link to="/cinepelis" className="project" style={{ textDecoration: 'none' }}>
                     <div className="imgproject"><img src={CinePelis} alt="Cinepelis" width="100%"></img></div>
                     <h3>CinePelis</h3>
                     <p>Project developed with React</p>
                 </Link>
-                <div className="project">
+                <Link to="/venuspizza" className="project" style={{ textDecoration: 'none' }}>
                     <div className="imgproject"><img src={Venuspizza} alt="VenusPizza" width="100%"></img></div>
                     <h3>Venus Pizza</h3>
                     <p>Project developed with React</p> 
-                </div>
+                </Link>
                 
             </div>
         </div>

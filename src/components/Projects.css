@@ -5,10 +5,19 @@
     height: auto;
     text-align: center;
     margin-top: 100px;
+    text-decoration: none;
 }
 
 .projects > h1 {
     font-size: 50px;
+}
+
+.project > h3 {
+    color: black;
+}
+
+.project > p {
+    color: black;
 }
 
 .imgproject {
