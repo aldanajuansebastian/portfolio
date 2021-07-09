@@ -1,11 +1,18 @@
 .projects {
-    margin: 0;
-    padding: 0;
     width: 100%;
-    height: auto;
     text-align: center;
-    margin-top: 100px;
     text-decoration: none;
+    background-color: white;
+    margin-top: -10px;
+    padding-bottom: 10%;
+}
+
+.white {
+    margin-top: 5%;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    
 }
 
 .projects > h1 {
@@ -49,16 +56,9 @@
     .project {
         margin: 20px 0;
     }
-
-    .projects {
-        margin-top: 10rem;
-    }
 }
 
 @media screen and (min-width: 500px) and (max-width: 600px){
-    .projects {
-        margin-top: 250px;
-    }
 
     .projectslist {
         flex-direction: column;
@@ -69,68 +69,16 @@
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 700px){
-    .projects {
-        margin-top: 180px;
-    }
-}
 
-@media screen and (min-width: 700px) and (max-width: 800px){
-    .projects {
-        margin-top: 150px;
-    }
-}
-
-@media screen and (min-width: 800px) and (max-width: 1000px){
-    .projects {
-        margin-top: 120px;
-    }
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1200px){
-    .projects {
-        margin-top: 100px;
-    }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1400px){
-    .projects {
-        margin-top: 80px;
-    }
-}
-
-
-@media screen and (min-width: 1600px) and (max-width: 1800px){
-    .projects {
-        margin-top: 150px;
-    }
-}
-
-@media screen and (min-width: 1800px) and (max-width: 2000px){
-    .projects {
-        margin-top: 220px;
-    }
-}
-
-@media screen and (min-width: 2000px) and (max-width: 2200px){
-    .projects {
-        margin-top: 260px;
-    }
-}
 
 @media screen and (min-width: 2200px) and (max-width: 2400px){
-    .projects {
-        margin-top: 350px;
-    }
+
     .imgproject {
         width: 600px;
     }
 }
 
 @media screen and (min-width: 2400px) {
-    .projects {
-        margin-top: 200px;
-    }
 
     .imgproject {
         width: 600px;
