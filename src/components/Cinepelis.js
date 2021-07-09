@@ -1,7 +1,8 @@
 import React from 'react';
 import blue from './img/blue.png';
 import './cinepelis.css';
-import Imagen1 from './img/mkcp1.png'
+import Imagen1 from './img/mkcp1.png';
+import orange from './img/orange.png';
 
 const Cinepelis = () => {
     return (
@@ -35,8 +36,10 @@ const Cinepelis = () => {
                 </div>
             </div>
             <div className="secondsection">
+                <button className="verpagina">Ver pagina</button>
                 <div className="moredetails">
                     <h2>More Details</h2>
+                    <br></br>
                     <p>
                         This website was built with React. It contains different components.
                         The first one you see is the main banner, it has the logo of the company,
@@ -49,6 +52,7 @@ const Cinepelis = () => {
                     </p>
                 </div>
             </div>
+            <img className="orange" src={orange} width="100%" alt="fondo naranja"></img>
         </div>
     );
 }
