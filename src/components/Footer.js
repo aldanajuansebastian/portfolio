@@ -9,7 +9,7 @@ import Whatsapp from './img/whatsapp.png';
 
 function Footer () {
     return (
-        <div className="footer" id="footer">
+        <div className="footer" id="contact" animate={{ x: 20 }} transition={{ type: "spring", stiffness: 5000 }}>
                 <div className="con">
                     <motion.h3 whileHover= {{scale:0.9}}>Sebastian Aldana</motion.h3>
                     <p>aldanajuansebastian1@gmail.com</p>

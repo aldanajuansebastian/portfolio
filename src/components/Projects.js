@@ -10,9 +10,9 @@ import White from './img/white.png';
 
 function Projects () {
     return (
-        <div>
+        <div id="projects">
             <img className="white" src={White} width="100%" alt="fondo blanco"></img>
-            <div className="projects" id="projects">
+            <div className="projects" >
             <motion.h1 whileHover= {{scale:0.9}}>Projects</motion.h1>
                 <div className="projectslist">
                     <Link to="/cinepelis" className="project" style={{ textDecoration: 'none' }}>

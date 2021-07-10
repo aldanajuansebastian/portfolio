@@ -2,11 +2,15 @@ import React from 'react';
 import blue from './img/blue.png';
 import './cinepelis.css';
 import Imagen1 from './img/mkcp1.png';
+import Imagen2 from './img/mkcp2.JPG';
 import orange from './img/orange.png';
+import { motion } from 'framer-motion';
+import NavBar1 from './NavBar1';
 
 const Cinepelis = () => {
     return (
-        <div className="cinepelis">
+        <motion.div className="cinepelis" animate={{ x: 20 }} transition={{ type: "spring", stiffness: 500 }}>
+            <NavBar1 />
             <div className="blue">
                 <img src={blue} alt="Blue bg" width="100%" height="100%"></img>
             </div>
@@ -17,7 +21,7 @@ const Cinepelis = () => {
             </div>
             <div className="firstsection">
                 <div className="mkcp1">
-                    <img src={Imagen1} alt="Blue bg" width="100%" height="100%"></img>
+                    <img src={Imagen1} alt="Mockup Cinepelis" width="100%" height="100%"></img>
                 </div>
                 <div className="description">
                     <h4>CinePelis (REACT)</h4>
@@ -36,7 +40,12 @@ const Cinepelis = () => {
                 </div>
             </div>
             <div className="secondsection">
-                <button className="verpagina">Ver pagina</button>
+                <a href="https://aldanajuansebastian.github.io/peliculas">
+                    <motion.button animate={{boxShadow: "10px 10px 0 rgba(0, 0, 0, 0.2)"}} whileHover={{scale:1.1}} className="verpagina">Ver pagina</motion.button>
+                </a>
+                <div className="mkcp2">
+                    <img src={Imagen2} alt="Mockup Cinepelis" width="100%" height="100%"></img>
+                </div>
                 <div className="moredetails">
                     <h2>More Details</h2>
                     <br></br>
@@ -53,7 +62,7 @@ const Cinepelis = () => {
                 </div>
             </div>
             <img className="orange" src={orange} width="100%" alt="fondo naranja"></img>
-        </div>
+        </motion.div>
     );
 }
 

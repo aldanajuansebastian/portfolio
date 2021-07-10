@@ -7,6 +7,11 @@
     justify-content: center;
     text-decoration: none;
     color: white;
+    z-index: 1;
+}
+
+.Link1 {
+    cursor: pointer;
 }
 
 .navbar> .itemNav> a {
