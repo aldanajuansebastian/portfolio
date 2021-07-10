@@ -15,11 +15,10 @@ const AppRouter = () => {
                 <Switch>
                     <Route path="/cinepelis">
                         <Cinepelis />
-                        <Footer />
                     </Route>
                     <Route path="/venuspizza">
+                        
                         <Venuspizza />
-                        <Footer />
                     </Route>
                     <Route path="/">
                         <Navbar />

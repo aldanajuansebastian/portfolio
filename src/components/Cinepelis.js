@@ -1,17 +1,18 @@
 import React from 'react';
 import blue from './img/blue.png';
-import './cinepelis.css';
+import './description.css';
 import Imagen1 from './img/mkcp1.png';
 import Imagen2 from './img/mkcp2.JPG';
 import orange from './img/orange.png';
 import { motion } from 'framer-motion';
 import NavBar1 from './NavBar1';
+import Footer from './Footer';
 
 const Cinepelis = () => {
     return (
-        <motion.div className="cinepelis" animate={{ x: 20 }} transition={{ type: "spring", stiffness: 500 }}>
+        <motion.div className="page" animate={{ x: 20 }} transition={{ type: "spring", stiffness: 500 }}>
             <NavBar1 />
-            <div className="blue">
+            <div className="blue2">
                 <img src={blue} alt="Blue bg" width="100%" height="100%"></img>
             </div>
 
@@ -20,7 +21,7 @@ const Cinepelis = () => {
                 <h2>Description</h2>
             </div>
             <div className="firstsection">
-                <div className="mkcp1">
+                <div className="mk1">
                     <img src={Imagen1} alt="Mockup Cinepelis" width="100%" height="100%"></img>
                 </div>
                 <div className="description">
@@ -43,7 +44,7 @@ const Cinepelis = () => {
                 <a href="https://aldanajuansebastian.github.io/peliculas">
                     <motion.button animate={{boxShadow: "10px 10px 0 rgba(0, 0, 0, 0.2)"}} whileHover={{scale:1.1}} className="verpagina">Ver pagina</motion.button>
                 </a>
-                <div className="mkcp2">
+                <div className="mk2">
                     <img src={Imagen2} alt="Mockup Cinepelis" width="100%" height="100%"></img>
                 </div>
                 <div className="moredetails">
@@ -61,7 +62,11 @@ const Cinepelis = () => {
                     </p>
                 </div>
             </div>
-            <img className="orange" src={orange} width="100%" alt="fondo naranja"></img>
+            <div className="orange">
+                <img src={orange} width="100%" alt="fondo naranja"></img>
+            </div>
+            
+            <Footer />
         </motion.div>
     );
 }

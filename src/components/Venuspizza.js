@@ -1,17 +1,18 @@
 import React from 'react';
 import blue from './img/blue.png';
-import './venuspizza.css';
-import Imagen1 from './img/mkcp1.png';
-import Imagen2 from './img/mkcp2.JPG';
+import './description.css';
+import Imagen1 from './img/mkvp1.png';
+import Imagen2 from './img/mkvp2.png';
 import orange from './img/orange.png';
 import { motion } from 'framer-motion';
 import NavBar1 from './NavBar1';
+import Footer from './Footer';
 
 const Venuspizza = () => {
     return (
-        <motion.div className="venuspizza" animate={{ x: 20 }} transition={{ type: "spring", stiffness: 500 }}>
+        <motion.div className="page" animate={{ x: 20 }} transition={{ type: "spring", stiffness: 500 }}>
             <NavBar1 />
-            <div className="blue">
+            <div className="blue2">
                 <img src={blue} alt="Blue bg" width="100%" height="100%"></img>
             </div>
 
@@ -20,22 +21,24 @@ const Venuspizza = () => {
                 <h2>Description</h2>
             </div>
             <div className="firstsection">
-                <div className="mkcp1">
-                    <img src={Imagen1} alt="Mockup Cinepelis" width="100%" height="100%"></img>
+                <div className="mk1">
+                    <img src={Imagen1} alt="Mockup" width="100%" height="100%"></img>
                 </div>
                 <div className="description">
                     <h4>Venus Pizza (REACT)</h4>
                     <br></br>
                     <p>
                         This is a personal project developed with React. It's a website
-                        about film productions. The project displays a list of different movies created
-                        by CinePelis (this company does not exist). In addition, each movie has the
-                        name, gender, rate and the option to choose the rate represented with stars.
-                        Also, you can find a delete button to hide the selected movie.
+                        about Pizza Customization. The project displays a single Landing page that
+                        has a button to call to action (Arma tu pizza). In the customize section you can choose
+                        your favorite ingredients. There is a list that contains cheese, basil, tomato,
+                        pineapple, etc.
 
-                        The website allows you to add a new movie. You have to click Add New
-                        A movie and a new page form appear. Try to write a name, choose the gender
-                        and a fee. It will show the new movie on screen immediately.
+                        The animation when you add the new ingredients is very soft and attractive.
+                        To animate I use the package framer motion. When you are sure about your pizza you
+                        clic on the next button and a new page appears. The new page shows you the 
+                        purchase summary. Finally, if you clic on the next button your order is received,
+                        and a new subpage ask you for wait the order.
                     </p>
                 </div>
             </div>
@@ -43,25 +46,26 @@ const Venuspizza = () => {
                 <a href="https://aldanajuansebastian.github.io/venuspizza">
                     <motion.button animate={{boxShadow: "10px 10px 0 rgba(0, 0, 0, 0.2)"}} whileHover={{scale:1.1}} className="verpagina">Ver pagina</motion.button>
                 </a>
-                <div className="mkcp2">
-                    <img src={Imagen2} alt="Mockup Cinepelis" width="100%" height="100%"></img>
+                <div className="mk2">
+                    <img src={Imagen2} alt="Mockup" width="100%" height="100%"></img>
                 </div>
                 <div className="moredetails">
                     <h2>More Details</h2>
                     <br></br>
                     <p>
-                        This website was built with React. It contains different components.
-                        The first one you see is the main banner, it has the logo of the company,
-                        a short description and finally a button to call to action
-                        (Search). The search bar has the input to type the name and a
-                        to add a new movie button. You can search for any letter and if the name of the movie
-                        You have entered the letter. It will appear in the next section. The following 
-                        is the list of movies. The default list shows all movies. But you can choose which
-                        see or not.
+                        The name Venus pizza is from a pizza shop near my home. They cook the best pizza and 
+                        they inspire me to build the website. The web app is very simple and has not a lot of
+                        functionalities. But is an scalable app. In the future I hope to add new funcionalities as
+                        the payment section, new sizes of pizza and more flavors.
+
                     </p>
                 </div>
             </div>
-            <img className="orange" src={orange} width="100%" alt="fondo naranja"></img>
+            <div className="orange">
+                <img src={orange} width="100%" alt="fondo naranja"></img>
+            </div>
+            
+            <Footer />
         </motion.div>
     );
 }
