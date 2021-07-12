@@ -1,4 +1,8 @@
 .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     text-align: center;
     text-decoration: none;
@@ -17,6 +21,16 @@
 
 .projects > h1 {
     font-size: 50px;
+}
+
+.introduction{
+    width: 50%;
+    text-align: justify;
+}
+
+.contactme {
+    color : rgb(158, 118, 89);
+    cursor: pointer;
 }
 
 .project > h3 {
@@ -56,9 +70,12 @@
     .project {
         margin: 20px 0;
     }
+    .introduction{
+        width: 80%;
+    }
 }
 
-@media screen and (min-width: 500px) and (max-width: 600px){
+@media screen and (min-width: 500px) and (max-width: 900px){
 
     .projectslist {
         flex-direction: column;
@@ -66,6 +83,9 @@
 
     .project {
         margin: 20px 0;
+    }
+    .introduction{
+        width: 80%;
     }
 }
 
