@@ -22,6 +22,8 @@ function Skills () {
                                 <br/>
                             <p>On the other hand I have specialized in the last months in creating web 
                                 applications with React.</p>
+                                <br/>
+                            <p>my main skills are the following:</p>
                         </div>
                         <div className="skillslist">
                             <div className="skill">
