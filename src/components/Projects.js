@@ -25,7 +25,7 @@ function Projects () {
                     However, I have worked on the following personal projects 
                     to show you what I can do. In my academic experience I have worked in teams and I have developed 
                     soft skills such as teamwork, adaptation to change, efficiency and a collaborative spirit. 
-                    I have worked with the SCRUM methodology. However, the following projects were developed only for by me.</p>
+                    I have worked with the SCRUM methodology. However, the following projects were developed only by me.</p>
                 </div>
                 
                 
