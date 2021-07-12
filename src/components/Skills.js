@@ -21,9 +21,7 @@ function Skills () {
                                 development with Python, Java and handling relational databases (SQL).</p>
                                 <br/>
                             <p>On the other hand I have specialized in the last months in creating web 
-                                applications with React.</p>
-                                <br/>
-                            <p>my main skills are the following:</p>
+                                applications with React. My main skills are the following:</p>
                         </div>
                         <div className="skillslist">
                             <div className="skill">
