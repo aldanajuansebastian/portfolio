@@ -16,6 +16,13 @@ function Skills () {
                     
                     <div className="con">
                         <motion.h1 whileHover= {{scale:0.9}}>My Skills</motion.h1>
+                        <div className="introductionskills">
+                            <p>I am a front end developer. However, I have knowledge and bases in backend 
+                                development with Python, Java and handling relational databases (SQL).</p>
+                                <br/>
+                            <p>On the other hand I have specialized in the last months in creating web 
+                                applications with React.</p>
+                        </div>
                         <div className="skillslist">
                             <div className="skill">
                                 <div className="imgskill"><img src={LogoReact} alt="React Logo" width="100%"></img></div>
